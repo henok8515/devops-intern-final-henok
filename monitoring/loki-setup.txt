@@ -1,0 +1,16 @@
+Step 6 - Loki Monitoring
+
+1. Started Loki using Docker:
+docker run -d --name loki -p 3100:3100 grafana/loki:latest
+
+2. Verified:
+http://localhost:3100/ready → ready
+
+3. Generated application logs:
+docker run hello-devops
+
+4. Viewed logs locally:
+docker logs <container_id>
+
+5. Explanation:
+Loki is a log aggregation system used in DevOps to centralize logs from containers and services.
